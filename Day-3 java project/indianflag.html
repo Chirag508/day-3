@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquerry</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+    </script>  
+    <script type="text/javascript" language="javascript">  
+    
+        $(document).ready(function()
+       
+           
+        { 
+            $("p").css("background-color", "rgba(250, 100, 0, 0.911)");
+            $(".aa2").css("background-color","rgba(255, 255, 255)");
+        $("#aa1").css("background-color", "rgba(16, 151, 57, 0.911)");
+    });
+    $(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+        
+    
+    </script>
+    <style>
+        .slam {
+  font-size: 30px;
+}
+
+@-webkit-keyframes slam-animation {
+    0% {
+      opacity: 0;
+        -webkit-transform: scale(5);
+        transform: scale(5);
+        animation: timeline 5s;;
+    }
+
+    100% {
+      opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+.slam {
+    -webkit-animation: slam-animation 0.5s ease-in infinite;
+    animatio: slam-animation 1s infinte;
+}
+
+    </style>
+</head>
+<body style="background-color: skyblue;">
+    <center>
+        <p>.  </p>
+         <p class="aa2">🔵</p>
+         <p id="aa1">.</p>
+        <pre> <span class="animated slam">jay hind </span></pre>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </center>  
+</body> 
+</html>
